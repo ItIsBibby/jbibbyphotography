@@ -1,28 +1,21 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import DSC_0303 from '../img/DSC_0303.PNG'
 
 class Gallery extends Component {
     render() {
+        const imageElements = this.props.images.map( image => 
+            <div>
+                <img src={image} />
+                <p className='legend'>Legend 1</p>
+            </div>
+        )
         return (
             <Carousel>
-                <div>
-                    <img src={DSC_0303} />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
+                {imageElements}
             </Carousel>
         );
     }
 };
-  
+
 export default Gallery
