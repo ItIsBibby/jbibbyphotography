@@ -11,7 +11,7 @@ class Gallery extends Component {
             </div>
         )
         return (
-            <Carousel>
+            <Carousel autoPlay={true} interval={5000}>
                 {imageElements}
             </Carousel>
         );
