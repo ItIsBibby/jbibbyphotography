@@ -15,14 +15,11 @@ import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 
 const carouselImages = [
-  louvre_paris,
   mwnt_cliffs,
   mwnt_peak,
   new_quay_fishing,
-  sacre_coeur_paris,
   sidmouth_cliffs,
-  whitby_fishing,
-  whitby_harbour
+  whitby_fishing
 ];
 
 function App() {

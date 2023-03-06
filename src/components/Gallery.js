@@ -6,12 +6,11 @@ class Gallery extends Component {
     render() {
         const imageElements = this.props.images.map( image => 
             <div>
-                <img src={image} />
-                <p className='legend'>Legend 1</p>
+                <img src={image} className="carouselImage"/>
             </div>
         )
         return (
-            <Carousel autoPlay={true} interval={5000}>
+            <Carousel autoPlay={true} dynamicHeight={true} infiniteLoop={true} interval={7000} showStatus={false} transitionTime={2000}>
                 {imageElements}
             </Carousel>
         );
