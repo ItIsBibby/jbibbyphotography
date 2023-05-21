@@ -7,10 +7,10 @@ import etsy from '../img/etsy.png'
 const Footer = () => {
     return (
       <div id='footer'>
-        <img src={facebook}/>
-        <img src={instagram}/>
-        <img src={linkedin}/>
-        <img src={etsy}/>
+        <a href="https://www.facebook.com/jbibbyphotography/"><img src={facebook}/></a>
+        <a href="https://www.instagram.com/jbibbyphotography/"><img src={instagram}/></a>
+        <a href="https://www.linkedin.com/in/joseph-bibby-367bb9139/"><img src={linkedin}/></a>
+        <a href="https://www.etsy.com/uk/shop/JBibbyPhotography"><img src={etsy}/></a>
       </div>
     );
   };
